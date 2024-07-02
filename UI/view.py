@@ -46,6 +46,7 @@ class View(ft.UserControl):
         self._page.controls.append(row1)
 
         self.ddmese = ft.Dropdown(label="Mese")
+        self._controller.fillDDmese()
         self.btn_connesioneMAx = ft.ElevatedButton(text="Connessione Max", on_click=self._controller.handle_connesione_max)
 
         row2 = ft.Row([self.ddmese, self.btn_connesioneMAx],
